@@ -1,9 +1,10 @@
 public class ReverseLettersAndWords {
 
-    public static String foo(String s){
+    public static String foo(String s) {
         StringBuilder stringBuilder = new StringBuilder(s);
         return stringBuilder.reverse().toString();
     }
+
     public static void main(String[] args) {
         String s = "Hello World";
 
