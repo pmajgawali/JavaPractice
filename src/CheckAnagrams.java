@@ -23,17 +23,13 @@ public class CheckAnagrams {
             isAnagram = false;
         } else {
             for (Map.Entry<Character, Integer> entry : map1.entrySet()) {
-                if (map2.get(entry.getKey()) != entry.getValue()) {
+                if (!map2.getOrDefault(entry.getKey(), 0).equals(entry.getValue())) {
                     isAnagram = false;
                     break;
                 }
             }
         }
-
-
         System.out.println(isAnagram);
-
-
     }
 
 }
